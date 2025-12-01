@@ -1,0 +1,142 @@
+[
+    {
+        "country": "USA",
+        "period": "1960-1979",
+        "question": "In what year did the first human land on the Moon?",
+        "answer": "1969",
+        "funFact": "The Apollo 11 mission landed Neil Armstrong and Buzz Aldrin on the lunar surface."
+    },
+    {
+        "country": "USA",
+        "period": "1960-1979",
+        "question": "What famous music festival took place in New York in 1969?",
+        "answer": "Woodstock",
+        "funFact": "Over 400,000 people attended this three-day festival."
+    },
+    {
+        "country": "USA",
+        "period": "1960-1979",
+        "question": "Which TV show featured Captain Kirk and Mr. Spock?",
+        "answer": "Star Trek",
+        "funFact": "Star Trek first aired in 1966."
+    },
+    {
+        "country": "USA",
+        "period": "1980-1999",
+        "question": "What music television network launched in 1981?",
+        "answer": "MTV",
+        "funFact": "The first music video played was Video Killed the Radio Star."
+    },
+    {
+        "country": "USA",
+        "period": "1980-1999",
+        "question": "What famous movie featured a boy who befriended an alien?",
+        "answer": "E.T. the Extra-Terrestrial",
+        "funFact": "Directed by Steven Spielberg in 1982."
+    },
+    {
+        "country": "USA",
+        "period": "2000-2019",
+        "question": "What social media platform was founded in 2004?",
+        "answer": "Facebook",
+        "funFact": "Facebook started as a Harvard University student directory."
+    },
+    {
+        "country": "USA",
+        "period": "2000-2019",
+        "question": "What smartphone revolutionized mobile technology in 2007?",
+        "answer": "The iPhone",
+        "funFact": "Steve Jobs introduced the first iPhone."
+    },
+    {
+        "country": "Nigeria",
+        "period": "1960-1979",
+        "question": "In what year did Nigeria gain independence?",
+        "answer": "1960",
+        "funFact": "Nigeria became independent on October 1, 1960."
+    },
+    {
+        "country": "Nigeria",
+        "period": "1960-1979",
+        "question": "What music genre emerged from Nigeria?",
+        "answer": "Afrobeat",
+        "funFact": "Fela Kuti is considered the pioneer of Afrobeat music."
+    },
+    {
+        "country": "Nigeria",
+        "period": "1960-1979",
+        "question": "What is Nigeria's most populous city?",
+        "answer": "Lagos",
+        "funFact": "Lagos was Nigeria's capital until 1991."
+    },
+    {
+        "country": "Nigeria",
+        "period": "1980-1999",
+        "question": "In what year did Abuja become Nigeria's capital?",
+        "answer": "1991",
+        "funFact": "Abuja was built in the center of the country."
+    },
+    {
+        "country": "Nigeria",
+        "period": "1980-1999",
+        "question": "What is the name of Nigeria's film industry?",
+        "answer": "Nollywood",
+        "funFact": "Nollywood is the second-largest film industry in the world."
+    },
+    {
+        "country": "Nigeria",
+        "period": "2000-2019",
+        "question": "What is Nigeria's most popular sport?",
+        "answer": "Football or soccer",
+        "funFact": "Nigeria has qualified for the FIFA World Cup multiple times."
+    },
+    {
+        "country": "Nigeria",
+        "period": "2000-2019",
+        "question": "What is Nigeria's currency called?",
+        "answer": "The Naira",
+        "funFact": "The Naira replaced the British pound in 1973."
+    },
+    {
+        "country": "USA",
+        "period": "1940-1959",
+        "question": "What year did World War II end?",
+        "answer": "1945",
+        "funFact": "The war ended with Japan's surrender on September 2, 1945."
+    },
+    {
+        "country": "USA",
+        "period": "1940-1959",
+        "question": "What iconic highway system opened in 1956?",
+        "answer": "The Interstate Highway System",
+        "funFact": "President Eisenhower signed the act creating 41,000 miles of highways."
+    },
+    {
+        "country": "Nigeria",
+        "period": "1940-1959",
+        "question": "What was the capital of Nigeria in the 1950s?",
+        "answer": "Lagos",
+        "funFact": "Lagos served as the capital until 1991."
+    },
+    {
+        "country": "Nigeria",
+        "period": "1940-1959",
+        "question": "What major river flows through Nigeria?",
+        "answer": "The Niger River",
+        "funFact": "The Niger River is the third-longest river in Africa."
+    },
+    {
+        "country": "USA",
+        "period": "1960-1979",
+        "question": "What major civil rights leader gave the 'I Have a Dream' speech?",
+        "answer": "Martin Luther King Jr.",
+        "funFact": "The speech was delivered in 1963."
+    },
+    {
+        "country": "Nigeria",
+        "period": "1960-1979",
+        "question": "What Nigerian author wrote Things Fall Apart?",
+        "answer": "Chinua Achebe",
+        "funFact": "Published in 1958, it became widely read worldwide."
+    }
+]
