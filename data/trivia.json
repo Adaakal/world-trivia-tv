@@ -1,15 +1,225 @@
 [
     {
         "country": "USA",
-        "period": "1960-1979",
-        "question": "In what year did the first human land on the Moon?",
-        "answer": "1969",
-        "funFact": "The Apollo 11 mission landed Neil Armstrong and Buzz Aldrin on the lunar surface."
+        "period": "1940-1959",
+        "question": "What year did World War II end?",
+        "answer": "1945",
+        "funFact": "The war ended with Japan's surrender on September 2, 1945."
+    },
+    {
+        "country": "USA",
+        "period": "1940-1959",
+        "question": "What new form of music emerged in the 1940s?",
+        "answer": "Bebop jazz",
+        "funFact": "Musicians like Charlie Parker and Dizzy Gillespie pioneered this style."
+    },
+    {
+        "country": "USA",
+        "period": "1940-1959",
+        "question": "What iconic highway system opened in 1956?",
+        "answer": "The Interstate Highway System",
+        "funFact": "President Eisenhower signed the act creating 41,000 miles of highways."
+    },
+    {
+        "country": "USA",
+        "period": "1940-1959",
+        "question": "What popular toy was invented in 1943?",
+        "answer": "The Slinky",
+        "funFact": "Richard James watched a spring walk down and created the toy."
+    },
+    {
+        "country": "USA",
+        "period": "1940-1959",
+        "question": "What famous actress starred in Gentlemen Prefer Blondes?",
+        "answer": "Marilyn Monroe",
+        "funFact": "She sang Diamonds Are a Girl's Best Friend in the 1953 film."
+    },
+    {
+        "country": "USA",
+        "period": "1940-1959",
+        "question": "What television variety show debuted in 1948?",
+        "answer": "The Ed Sullivan Show",
+        "funFact": "The show introduced Americans to Elvis Presley and The Beatles."
+    },
+    {
+        "country": "USA",
+        "period": "1940-1959",
+        "question": "What fast food chain was founded in California in 1940?",
+        "answer": "McDonald's",
+        "funFact": "Ray Kroc bought the company in 1961 and expanded it worldwide."
+    },
+    {
+        "country": "USA",
+        "period": "1940-1959",
+        "question": "What children's TV show featured a kangaroo?",
+        "answer": "Captain Kangaroo",
+        "funFact": "Bob Keeshan played the Captain for nearly 30 years."
+    },
+    {
+        "country": "USA",
+        "period": "1940-1959",
+        "question": "What comic book superhero first appeared in 1941?",
+        "answer": "Captain America",
+        "funFact": "Captain America was created to fight the Nazis during WWII."
+    },
+    {
+        "country": "USA",
+        "period": "1940-1959",
+        "question": "What kitchen appliance became common in homes in the 1950s?",
+        "answer": "The microwave oven",
+        "funFact": "The first commercial microwave was sold in 1947."
+    },
+    {
+        "country": "USA",
+        "period": "1940-1959",
+        "question": "What type of music did Frank Sinatra sing?",
+        "answer": "Jazz and swing",
+        "funFact": "Sinatra was known as Ol' Blue Eyes and Chairman of the Board."
+    },
+    {
+        "country": "USA",
+        "period": "1940-1959",
+        "question": "What popular doll was introduced in 1959?",
+        "answer": "Barbie",
+        "funFact": "Barbie was created by Ruth Handler and named after her daughter."
+    },
+    {
+        "country": "USA",
+        "period": "1940-1959",
+        "question": "What science fiction magazine became popular in the 1950s?",
+        "answer": "Amazing Stories or Galaxy",
+        "funFact": "These magazines helped launch the golden age of sci-fi."
+    },
+    {
+        "country": "USA",
+        "period": "1940-1959",
+        "question": "What baseball player broke the color barrier in 1947?",
+        "answer": "Jackie Robinson",
+        "funFact": "Robinson played for the Brooklyn Dodgers."
+    },
+    {
+        "country": "USA",
+        "period": "1940-1959",
+        "question": "What plastic building toy was introduced in 1949?",
+        "answer": "LEGO bricks",
+        "funFact": "LEGO means play well in Danish."
+    },
+    {
+        "country": "USA",
+        "period": "1940-1959",
+        "question": "What famous amusement park opened in California in 1955?",
+        "answer": "Disneyland",
+        "funFact": "Walt Disney called it The Happiest Place on Earth."
+    },
+    {
+        "country": "USA",
+        "period": "1940-1959",
+        "question": "What new type of music did teenagers love in the 1950s?",
+        "answer": "Rock and roll",
+        "funFact": "Elvis Presley became the King of Rock and Roll."
+    },
+    {
+        "country": "USA",
+        "period": "1940-1959",
+        "question": "What television western featured Marshal Matt Dillon?",
+        "answer": "Gunsmoke",
+        "funFact": "Gunsmoke ran for 20 years from 1955 to 1975."
+    },
+    {
+        "country": "USA",
+        "period": "1940-1959",
+        "question": "What soft drink introduced the slogan Things Go Better With?",
+        "answer": "Coca-Cola",
+        "funFact": "Coke became a symbol of American culture worldwide."
+    },
+    {
+        "country": "USA",
+        "period": "1940-1959",
+        "question": "What device allowed people to change TV channels from their couch?",
+        "answer": "The remote control",
+        "funFact": "The first wireless TV remote was introduced in 1956."
+    },
+    {
+        "country": "USA",
+        "period": "1940-1959",
+        "question": "What fashion trend featured poodle designs on skirts?",
+        "answer": "Poodle skirts",
+        "funFact": "These were popular among teenage girls in the 1950s."
+    },
+    {
+        "country": "USA",
+        "period": "1940-1959",
+        "question": "What card game became a national craze in the 1950s?",
+        "answer": "Canasta",
+        "funFact": "Canasta originated in Uruguay and spread to the US."
+    },
+    {
+        "country": "USA",
+        "period": "1940-1959",
+        "question": "What kitchen device made toast pop up automatically?",
+        "answer": "The pop-up toaster",
+        "funFact": "Automatic toasters became common household appliances."
+    },
+    {
+        "country": "USA",
+        "period": "1940-1959",
+        "question": "What type of car became popular with two-tone paint?",
+        "answer": "The Chevrolet Bel Air or similar sedans",
+        "funFact": "1950s cars featured chrome trim and tail fins."
+    },
+    {
+        "country": "USA",
+        "period": "1940-1959",
+        "question": "What TV show featured Lucy and Ricky Ricardo?",
+        "answer": "I Love Lucy",
+        "funFact": "I Love Lucy was one of the first shows filmed in front of a live audience."
+    },
+    {
+        "country": "USA",
+        "period": "1940-1959",
+        "question": "What frozen dinner became popular in 1954?",
+        "answer": "TV dinners",
+        "funFact": "Swanson sold over 10 million TV dinners in the first year."
+    },
+    {
+        "country": "USA",
+        "period": "1940-1959",
+        "question": "What dance style featured quick footwork and spinning?",
+        "answer": "The jitterbug or swing dancing",
+        "funFact": "Swing dancing was popular in dance halls across America."
+    },
+    {
+        "country": "USA",
+        "period": "1940-1959",
+        "question": "What children's toy featured a spring that could walk down stairs?",
+        "answer": "Slinky",
+        "funFact": "Over 300 million Slinkys have been sold worldwide."
+    },
+    {
+        "country": "USA",
+        "period": "1940-1959",
+        "question": "What actress became a princess of Monaco in 1956?",
+        "answer": "Grace Kelly",
+        "funFact": "Grace Kelly married Prince Rainier III of Monaco."
+    },
+    {
+        "country": "USA",
+        "period": "1940-1959",
+        "question": "What magazine featured celebrities on its cover weekly?",
+        "answer": "Life Magazine",
+        "funFact": "Life was famous for its photography and photojournalism."
     },
     {
         "country": "USA",
         "period": "1960-1979",
-        "question": "What famous music festival took place in New York in 1969?",
+        "question": "In what year did the first human land on the Moon?",
+        "answer": "1969",
+        "funFact": "Apollo 11 landed Neil Armstrong and Buzz Aldrin on the Moon."
+    },
+    {
+        "country": "USA",
+        "period": "1960-1979",
+        "question": "What famous music festival took place in 1969?",
         "answer": "Woodstock",
         "funFact": "Over 400,000 people attended this three-day festival."
     },
@@ -18,35 +228,826 @@
         "period": "1960-1979",
         "question": "Which TV show featured Captain Kirk and Mr. Spock?",
         "answer": "Star Trek",
-        "funFact": "Star Trek first aired in 1966."
+        "funFact": "Star Trek first aired in 1966 and became a cultural phenomenon."
+    },
+    {
+        "country": "USA",
+        "period": "1960-1979",
+        "question": "What dance style became popular in the 1970s?",
+        "answer": "Disco dancing",
+        "funFact": "Saturday Night Fever made disco mainstream in 1977."
+    },
+    {
+        "country": "USA",
+        "period": "1960-1979",
+        "question": "Who gave the I Have a Dream speech?",
+        "answer": "Martin Luther King Jr.",
+        "funFact": "The speech was delivered in 1963 at the Lincoln Memorial."
+    },
+    {
+        "country": "USA",
+        "period": "1960-1979",
+        "question": "What children's TV show featured Big Bird?",
+        "answer": "Sesame Street",
+        "funFact": "Sesame Street premiered in 1969 and taught generations of children."
+    },
+    {
+        "country": "USA",
+        "period": "1960-1979",
+        "question": "What rock legend was known as The King?",
+        "answer": "Elvis Presley",
+        "funFact": "Elvis had 18 number-one hits and starred in 31 movies."
+    },
+    {
+        "country": "USA",
+        "period": "1960-1979",
+        "question": "What animated family lived in Bedrock?",
+        "answer": "The Flintstones",
+        "funFact": "The Flintstones was the first animated prime time series."
+    },
+    {
+        "country": "USA",
+        "period": "1960-1979",
+        "question": "What board game involves solving a mystery?",
+        "answer": "Clue",
+        "funFact": "Players figure out who, with what weapon, and in which room."
+    },
+    {
+        "country": "USA",
+        "period": "1960-1979",
+        "question": "What organization was formed to protect the environment in 1970?",
+        "answer": "The EPA",
+        "funFact": "The Environmental Protection Agency regulates pollution."
+    },
+    {
+        "country": "USA",
+        "period": "1960-1979",
+        "question": "What British band became famous in America in 1964?",
+        "answer": "The Beatles",
+        "funFact": "The Beatles appeared on The Ed Sullivan Show."
+    },
+    {
+        "country": "USA",
+        "period": "1960-1979",
+        "question": "What war ended in 1975?",
+        "answer": "The Vietnam War",
+        "funFact": "The war lasted nearly 20 years."
+    },
+    {
+        "country": "USA",
+        "period": "1960-1979",
+        "question": "What toy featured a stretchy orange man?",
+        "answer": "Stretch Armstrong",
+        "funFact": "Stretch Armstrong could stretch up to four feet."
+    },
+    {
+        "country": "USA",
+        "period": "1960-1979",
+        "question": "What video game console was released in 1977?",
+        "answer": "The Atari 2600",
+        "funFact": "The Atari brought arcade games into homes."
+    },
+    {
+        "country": "USA",
+        "period": "1960-1979",
+        "question": "What TV show featured the Fonz?",
+        "answer": "Happy Days",
+        "funFact": "The Fonz became an icon of cool in the 1970s."
+    },
+    {
+        "country": "USA",
+        "period": "1960-1979",
+        "question": "What famous scandal led to a president resigning in 1974?",
+        "answer": "Watergate",
+        "funFact": "President Richard Nixon resigned over the Watergate scandal."
+    },
+    {
+        "country": "USA",
+        "period": "1960-1979",
+        "question": "What toy featured colorful interlocking plastic bricks?",
+        "answer": "LEGO",
+        "funFact": "LEGO became hugely popular in America during this period."
+    },
+    {
+        "country": "USA",
+        "period": "1960-1979",
+        "question": "What movie featured a shark terrorizing a beach town?",
+        "answer": "Jaws",
+        "funFact": "Jaws was directed by Steven Spielberg in 1975."
+    },
+    {
+        "country": "USA",
+        "period": "1960-1979",
+        "question": "What space program sent astronauts to the Moon?",
+        "answer": "Apollo",
+        "funFact": "The Apollo program had 17 missions from 1961 to 1972."
+    },
+    {
+        "country": "USA",
+        "period": "1960-1979",
+        "question": "What toy featured a spring and could walk down stairs?",
+        "answer": "Slinky",
+        "funFact": "The Slinky remained popular throughout the decades."
+    },
+    {
+        "country": "USA",
+        "period": "1960-1979",
+        "question": "What TV detective drove a brown car and wore a rumpled coat?",
+        "answer": "Columbo",
+        "funFact": "Peter Falk played the famous detective Columbo."
+    },
+    {
+        "country": "USA",
+        "period": "1960-1979",
+        "question": "What science fiction movie featured Luke Skywalker?",
+        "answer": "Star Wars",
+        "funFact": "Star Wars was released in 1977 and became a phenomenon."
+    },
+    {
+        "country": "USA",
+        "period": "1960-1979",
+        "question": "What toy let you create pictures with colored pegs?",
+        "answer": "Lite-Brite",
+        "funFact": "Lite-Brite was introduced in 1967."
+    },
+    {
+        "country": "USA",
+        "period": "1960-1979",
+        "question": "What breakfast cereal featured a tiger mascot?",
+        "answer": "Frosted Flakes",
+        "funFact": "Tony the Tiger said They're Grrreat!"
+    },
+    {
+        "country": "USA",
+        "period": "1960-1979",
+        "question": "What TV family featured a housekeeper named Alice?",
+        "answer": "The Brady Bunch",
+        "funFact": "The Brady Bunch aired from 1969 to 1974."
+    },
+    {
+        "country": "USA",
+        "period": "1960-1979",
+        "question": "What toy let you draw with a magnetic stylus?",
+        "answer": "Etch A Sketch",
+        "funFact": "Etch A Sketch was introduced in 1960."
+    },
+    {
+        "country": "USA",
+        "period": "1960-1979",
+        "question": "What band performed at the first Super Bowl halftime show?",
+        "answer": "University of Arizona and Grambling State marching bands",
+        "funFact": "The first Super Bowl was in 1967."
+    },
+    {
+        "country": "USA",
+        "period": "1960-1979",
+        "question": "What puppet show featured Kermit the Frog?",
+        "answer": "The Muppet Show",
+        "funFact": "Jim Henson created the Muppets."
+    },
+    {
+        "country": "USA",
+        "period": "1960-1979",
+        "question": "What dance move involved staying low to the ground?",
+        "answer": "The limbo",
+        "funFact": "The limbo originated in Trinidad."
+    },
+    {
+        "country": "USA",
+        "period": "1960-1979",
+        "question": "What fast food chain started selling burgers in 1967?",
+        "answer": "Wendy's",
+        "funFact": "Wendy's was founded by Dave Thomas."
     },
     {
         "country": "USA",
         "period": "1980-1999",
         "question": "What music television network launched in 1981?",
         "answer": "MTV",
-        "funFact": "The first music video played was Video Killed the Radio Star."
+        "funFact": "The first music video was Video Killed the Radio Star."
     },
     {
         "country": "USA",
         "period": "1980-1999",
-        "question": "What famous movie featured a boy who befriended an alien?",
+        "question": "What portable music player became huge in the 1980s?",
+        "answer": "The Walkman",
+        "funFact": "Sony's Walkman revolutionized how people listened to music."
+    },
+    {
+        "country": "USA",
+        "period": "1980-1999",
+        "question": "What video game character eats dots and is chased by ghosts?",
+        "answer": "Pac-Man",
+        "funFact": "Pac-Man became a cultural icon after its 1980 release."
+    },
+    {
+        "country": "USA",
+        "period": "1980-1999",
+        "question": "What movie featured a boy who befriended an alien?",
         "answer": "E.T. the Extra-Terrestrial",
         "funFact": "Directed by Steven Spielberg in 1982."
+    },
+    {
+        "country": "USA",
+        "period": "1980-1999",
+        "question": "What colorful puzzle cube became a craze?",
+        "answer": "Rubik's Cube",
+        "funFact": "Over 350 million Rubik's Cubes have been sold worldwide."
+    },
+    {
+        "country": "USA",
+        "period": "1980-1999",
+        "question": "What animated TV family has been on since 1989?",
+        "answer": "The Simpsons",
+        "funFact": "The Simpsons is the longest-running American sitcom."
+    },
+    {
+        "country": "USA",
+        "period": "1980-1999",
+        "question": "What computer was introduced by Apple in 1984?",
+        "answer": "The Macintosh",
+        "funFact": "The Mac introduced the graphical user interface to the masses."
+    },
+    {
+        "country": "USA",
+        "period": "1980-1999",
+        "question": "What movie featured a DeLorean time machine?",
+        "answer": "Back to the Future",
+        "funFact": "Released in 1985, starring Michael J. Fox."
+    },
+    {
+        "country": "USA",
+        "period": "1980-1999",
+        "question": "What handheld game system did Nintendo release in 1989?",
+        "answer": "Game Boy",
+        "funFact": "The Game Boy sold over 118 million units worldwide."
+    },
+    {
+        "country": "USA",
+        "period": "1980-1999",
+        "question": "What sitcom about six friends premiered in 1994?",
+        "answer": "Friends",
+        "funFact": "The show ran for 10 seasons and became a phenomenon."
+    },
+    {
+        "country": "USA",
+        "period": "1980-1999",
+        "question": "What wall came down in 1989 ending the Cold War?",
+        "answer": "The Berlin Wall",
+        "funFact": "The fall reunited East and West Germany."
+    },
+    {
+        "country": "USA",
+        "period": "1980-1999",
+        "question": "What video rental store became popular nationwide?",
+        "answer": "Blockbuster",
+        "funFact": "Blockbuster had over 9,000 stores at its peak."
+    },
+    {
+        "country": "USA",
+        "period": "1980-1999",
+        "question": "What toy featured transforming robots?",
+        "answer": "Transformers",
+        "funFact": "Transformers could change from robots to vehicles."
+    },
+    {
+        "country": "USA",
+        "period": "1980-1999",
+        "question": "What music format replaced vinyl records?",
+        "answer": "Compact discs or CDs",
+        "funFact": "CDs offered better sound quality and durability."
+    },
+    {
+        "country": "USA",
+        "period": "1980-1999",
+        "question": "What TV show featured a talking car named KITT?",
+        "answer": "Knight Rider",
+        "funFact": "David Hasselhoff starred as Michael Knight."
+    },
+    {
+        "country": "USA",
+        "period": "1980-1999",
+        "question": "What virtual pet required feeding and care?",
+        "answer": "Tamagotchi",
+        "funFact": "Tamagotchis became a worldwide craze in the 1990s."
+    },
+    {
+        "country": "USA",
+        "period": "1980-1999",
+        "question": "What movie featured dinosaurs brought back to life?",
+        "answer": "Jurassic Park",
+        "funFact": "Jurassic Park was released in 1993 with groundbreaking effects."
+    },
+    {
+        "country": "USA",
+        "period": "1980-1999",
+        "question": "What search engine became popular in 1998?",
+        "answer": "Google",
+        "funFact": "Google started in a garage in California."
+    },
+    {
+        "country": "USA",
+        "period": "1980-1999",
+        "question": "What toy featured small collectable creatures?",
+        "answer": "Pokémon",
+        "funFact": "Gotta catch 'em all became the famous slogan."
+    },
+    {
+        "country": "USA",
+        "period": "1980-1999",
+        "question": "What TV show featured a coffee shop called Central Perk?",
+        "answer": "Friends",
+        "funFact": "The friends hung out at Central Perk throughout the series."
+    },
+    {
+        "country": "USA",
+        "period": "1980-1999",
+        "question": "What portable gaming device featured Tetris?",
+        "answer": "Game Boy",
+        "funFact": "Tetris helped make the Game Boy a massive success."
+    },
+    {
+        "country": "USA",
+        "period": "1980-1999",
+        "question": "What movie featured Arnold Schwarzenegger as a robot?",
+        "answer": "The Terminator",
+        "funFact": "I'll be back became an iconic movie quote."
+    },
+    {
+        "country": "USA",
+        "period": "1980-1999",
+        "question": "What TV show featured four women in Miami?",
+        "answer": "The Golden Girls",
+        "funFact": "The Golden Girls ran from 1985 to 1992."
+    },
+    {
+        "country": "USA",
+        "period": "1980-1999",
+        "question": "What dolls came with adoption papers?",
+        "answer": "Cabbage Patch Kids",
+        "funFact": "Cabbage Patch Kids caused shopping frenzies in the 1980s."
+    },
+    {
+        "country": "USA",
+        "period": "1980-1999",
+        "question": "What movie featured Kevin McCallister home alone?",
+        "answer": "Home Alone",
+        "funFact": "Home Alone was released in 1990 and became a holiday classic."
+    },
+    {
+        "country": "USA",
+        "period": "1980-1999",
+        "question": "What cartoon featured four teenage turtles?",
+        "answer": "Teenage Mutant Ninja Turtles",
+        "funFact": "The turtles were named after famous Renaissance artists."
+    },
+    {
+        "country": "USA",
+        "period": "1980-1999",
+        "question": "What exercise video series became hugely popular?",
+        "answer": "Jane Fonda's Workout",
+        "funFact": "Jane Fonda's aerobics videos sold millions of copies."
+    },
+    {
+        "country": "USA",
+        "period": "1980-1999",
+        "question": "What TV show featured a bar in Boston?",
+        "answer": "Cheers",
+        "funFact": "The theme song said where everybody knows your name."
+    },
+    {
+        "country": "USA",
+        "period": "1980-1999",
+        "question": "What portable CD player let you listen to music on the go?",
+        "answer": "Discman",
+        "funFact": "Sony's Discman was introduced in 1984."
+    },
+    {
+        "country": "USA",
+        "period": "1980-1999",
+        "question": "What movie featured Ferris Bueller skipping school?",
+        "answer": "Ferris Bueller's Day Off",
+        "funFact": "The movie was released in 1986 and became a teen classic."
     },
     {
         "country": "USA",
         "period": "2000-2019",
         "question": "What social media platform was founded in 2004?",
         "answer": "Facebook",
-        "funFact": "Facebook started as a Harvard University student directory."
+        "funFact": "Facebook started as a Harvard student directory."
     },
     {
         "country": "USA",
         "period": "2000-2019",
-        "question": "What smartphone revolutionized mobile technology in 2007?",
+        "question": "What smartphone revolutionized technology in 2007?",
         "answer": "The iPhone",
         "funFact": "Steve Jobs introduced the first iPhone."
+    },
+    {
+        "country": "USA",
+        "period": "2000-2019",
+        "question": "What video-sharing website was founded in 2005?",
+        "answer": "YouTube",
+        "funFact": "The first video uploaded was titled Me at the zoo."
+    },
+    {
+        "country": "USA",
+        "period": "2000-2019",
+        "question": "What movie series featured wizards at Hogwarts?",
+        "answer": "Harry Potter",
+        "funFact": "Eight films were released between 2001 and 2011."
+    },
+    {
+        "country": "USA",
+        "period": "2000-2019",
+        "question": "What online encyclopedia allows anyone to edit?",
+        "answer": "Wikipedia",
+        "funFact": "Wikipedia was launched in 2001."
+    },
+    {
+        "country": "USA",
+        "period": "2000-2019",
+        "question": "What streaming service began offering movies in 2007?",
+        "answer": "Netflix streaming",
+        "funFact": "Netflix started as a DVD rental service."
+    },
+    {
+        "country": "USA",
+        "period": "2000-2019",
+        "question": "What microblogging platform limited posts to 140 characters?",
+        "answer": "Twitter",
+        "funFact": "Twitter launched in 2006 and later expanded to 280 characters."
+    },
+    {
+        "country": "USA",
+        "period": "2000-2019",
+        "question": "What music player did Apple release in 2001?",
+        "answer": "The iPod",
+        "funFact": "The iPod could hold 1,000 songs in your pocket."
+    },
+    {
+        "country": "USA",
+        "period": "2000-2019",
+        "question": "What photo-sharing app was acquired by Facebook?",
+        "answer": "Instagram",
+        "funFact": "Instagram launched in 2010 and was bought in 2012."
+    },
+    {
+        "country": "USA",
+        "period": "2000-2019",
+        "question": "What e-reader device did Amazon introduce?",
+        "answer": "Kindle",
+        "funFact": "The Kindle was released in 2007."
+    },
+    {
+        "country": "USA",
+        "period": "2000-2019",
+        "question": "What superhero movie started the Marvel Cinematic Universe?",
+        "answer": "Iron Man",
+        "funFact": "Iron Man was released in 2008 starring Robert Downey Jr."
+    },
+    {
+        "country": "USA",
+        "period": "2000-2019",
+        "question": "What tablet computer did Apple introduce in 2010?",
+        "answer": "The iPad",
+        "funFact": "The iPad created a new category of computing devices."
+    },
+    {
+        "country": "USA",
+        "period": "2000-2019",
+        "question": "What messaging app features disappearing photos?",
+        "answer": "Snapchat",
+        "funFact": "Snapchat was launched in 2011."
+    },
+    {
+        "country": "USA",
+        "period": "2000-2019",
+        "question": "What music streaming service launched in 2011?",
+        "answer": "Spotify",
+        "funFact": "Spotify came to the US from Sweden."
+    },
+    {
+        "country": "USA",
+        "period": "2000-2019",
+        "question": "What reality show featured contestants surviving on an island?",
+        "answer": "Survivor",
+        "funFact": "Survivor premiered in 2000 and is still running."
+    },
+    {
+        "country": "USA",
+        "period": "2000-2019",
+        "question": "What gaming console did Nintendo release in 2006?",
+        "answer": "The Wii",
+        "funFact": "The Wii featured motion-controlled gaming."
+    },
+    {
+        "country": "USA",
+        "period": "2000-2019",
+        "question": "What TV series featured a chemistry teacher turned criminal?",
+        "answer": "Breaking Bad",
+        "funFact": "Breaking Bad ran from 2008 to 2013."
+    },
+    {
+        "country": "USA",
+        "period": "2000-2019",
+        "question": "What ride-sharing app changed transportation?",
+        "answer": "Uber",
+        "funFact": "Uber was founded in 2009."
+    },
+    {
+        "country": "USA",
+        "period": "2000-2019",
+        "question": "What fantasy series featured dragons and the Iron Throne?",
+        "answer": "Game of Thrones",
+        "funFact": "Game of Thrones aired from 2011 to 2019."
+    },
+    {
+        "country": "USA",
+        "period": "2000-2019",
+        "question": "What voice assistant did Amazon introduce?",
+        "answer": "Alexa",
+        "funFact": "Alexa was introduced with the Echo in 2014."
+    },
+    {
+        "country": "USA",
+        "period": "2000-2019",
+        "question": "What building game features blocks and crafting?",
+        "answer": "Minecraft",
+        "funFact": "Minecraft was released in 2011."
+    },
+    {
+        "country": "USA",
+        "period": "2000-2019",
+        "question": "What fitness tracker company became popular?",
+        "answer": "Fitbit",
+        "funFact": "Fitbit was founded in 2007."
+    },
+    {
+        "country": "USA",
+        "period": "2000-2019",
+        "question": "What animated movie featured a superhero family?",
+        "answer": "The Incredibles",
+        "funFact": "The Incredibles was released by Pixar in 2004."
+    },
+    {
+        "country": "USA",
+        "period": "2000-2019",
+        "question": "What dance video game became a phenomenon?",
+        "answer": "Just Dance",
+        "funFact": "Just Dance was released in 2009."
+    },
+    {
+        "country": "USA",
+        "period": "2000-2019",
+        "question": "What TV talent show featured Simon Cowell?",
+        "answer": "American Idol",
+        "funFact": "American Idol premiered in 2002."
+    },
+    {
+        "country": "USA",
+        "period": "2000-2019",
+        "question": "What mobile game featured angry birds?",
+        "answer": "Angry Birds",
+        "funFact": "Angry Birds was released in 2009."
+    },
+    {
+        "country": "USA",
+        "period": "2000-2019",
+        "question": "What movie featured blue alien creatures on Pandora?",
+        "answer": "Avatar",
+        "funFact": "Avatar became the highest-grossing film in 2009."
+    },
+    {
+        "country": "USA",
+        "period": "2000-2019",
+        "question": "What TV series featured a mockumentary about an office?",
+        "answer": "The Office",
+        "funFact": "The US version of The Office ran from 2005 to 2013."
+    },
+    {
+        "country": "USA",
+        "period": "2000-2019",
+        "question": "What augmented reality game had people catching creatures?",
+        "answer": "Pokémon GO",
+        "funFact": "Pokémon GO was released in 2016."
+    },
+    {
+        "country": "USA",
+        "period": "2000-2019",
+        "question": "What superhero movie featured Black Panther?",
+        "answer": "Black Panther",
+        "funFact": "Black Panther was released in 2018 and celebrated African culture."
+    },
+    {
+        "country": "Nigeria",
+        "period": "1940-1959",
+        "question": "What language was used in Nigerian schools in the 1950s?",
+        "answer": "English",
+        "funFact": "English became the language of instruction."
+    },
+    {
+        "country": "Nigeria",
+        "period": "1940-1959",
+        "question": "What valuable crop was a major export from Nigeria?",
+        "answer": "Palm oil or groundnuts",
+        "funFact": "Nigeria was a leading producer for international trade."
+    },
+    {
+        "country": "Nigeria",
+        "period": "1940-1959",
+        "question": "What was Nigeria's capital in the 1950s?",
+        "answer": "Lagos",
+        "funFact": "Lagos served as capital until 1991."
+    },
+    {
+        "country": "Nigeria",
+        "period": "1940-1959",
+        "question": "What traditional fabric features colorful patterns?",
+        "answer": "Ankara or African print",
+        "funFact": "These fabrics are used for traditional and modern clothing."
+    },
+    {
+        "country": "Nigeria",
+        "period": "1940-1959",
+        "question": "What major river flows through Nigeria?",
+        "answer": "The Niger River",
+        "funFact": "The Niger River is the third-longest in Africa."
+    },
+    {
+        "country": "Nigeria",
+        "period": "1940-1959",
+        "question": "What valuable resource was discovered in the 1950s?",
+        "answer": "Oil or petroleum",
+        "funFact": "Oil was found in the Niger Delta region."
+    },
+    {
+        "country": "Nigeria",
+        "period": "1940-1959",
+        "question": "What type of government did Nigeria have before 1960?",
+        "answer": "British colonial rule",
+        "funFact": "Nigeria was a British colony until independence."
+    },
+    {
+        "country": "Nigeria",
+        "period": "1940-1959",
+        "question": "What is the traditional Nigerian hat worn by men?",
+        "answer": "Fila",
+        "funFact": "The fila is a traditional cap worn in Yoruba culture."
+    },
+    {
+        "country": "Nigeria",
+        "period": "1940-1959",
+        "question": "What crop is used to make garri?",
+        "answer": "Cassava",
+        "funFact": "Cassava is a staple food in Nigeria."
+    },
+    {
+        "country": "Nigeria",
+        "period": "1940-1959",
+        "question": "What traditional Nigerian instrument has strings?",
+        "answer": "The kora",
+        "funFact": "The kora is a harp-like instrument from West Africa."
+    },
+    {
+        "country": "Nigeria",
+        "period": "1940-1959",
+        "question": "What traditional Nigerian religion worships many deities?",
+        "answer": "Yoruba religion or traditional African religion",
+        "funFact": "Traditional beliefs coexist with Christianity and Islam."
+    },
+    {
+        "country": "Nigeria",
+        "period": "1940-1959",
+        "question": "What was the main form of transportation in villages?",
+        "answer": "Walking or bicycles",
+        "funFact": "Motor vehicles were rare in rural areas."
+    },
+    {
+        "country": "Nigeria",
+        "period": "1940-1959",
+        "question": "What crop was known as white gold in Nigeria?",
+        "answer": "Cotton",
+        "funFact": "Northern Nigeria produced much of the cotton."
+    },
+    {
+        "country": "Nigeria",
+        "period": "1940-1959",
+        "question": "What traditional Nigerian dish is made from beans?",
+        "answer": "Akara or moi moi",
+        "funFact": "Akara are bean fritters often eaten for breakfast."
+    },
+    {
+        "country": "Nigeria",
+        "period": "1940-1959",
+        "question": "What metal was used in traditional Nigerian jewelry?",
+        "answer": "Bronze or brass",
+        "funFact": "Benin bronze sculptures are world-famous."
+    },
+    {
+        "country": "Nigeria",
+        "period": "1940-1959",
+        "question": "What was the main religion in Northern Nigeria?",
+        "answer": "Islam",
+        "funFact": "Islam spread to Northern Nigeria centuries ago."
+    },
+    {
+        "country": "Nigeria",
+        "period": "1940-1959",
+        "question": "What traditional ceremony celebrates weddings?",
+        "answer": "Traditional marriage ceremony",
+        "funFact": "Nigerian weddings involve elaborate cultural rituals."
+    },
+    {
+        "country": "Nigeria",
+        "period": "1940-1959",
+        "question": "What type of housing was common in villages?",
+        "answer": "Mud or clay houses",
+        "funFact": "Traditional houses had thatched roofs."
+    },
+    {
+        "country": "Nigeria",
+        "period": "1940-1959",
+        "question": "What marketplace activity was central to communities?",
+        "answer": "Trading or market days",
+        "funFact": "Markets brought communities together for commerce."
+    },
+    {
+        "country": "Nigeria",
+        "period": "1940-1959",
+        "question": "What farming method was used for planting?",
+        "answer": "Subsistence farming",
+        "funFact": "Families grew food primarily for their own use."
+    },
+    {
+        "country": "Nigeria",
+        "period": "1940-1959",
+        "question": "What animal was important for farming?",
+        "answer": "Cattle or oxen",
+        "funFact": "Animals helped with plowing and transportation."
+    },
+    {
+        "country": "Nigeria",
+        "period": "1940-1959",
+        "question": "What traditional Nigerian storytelling includes moral lessons?",
+        "answer": "Folktales",
+        "funFact": "Elders told stories to teach children values."
+    },
+    {
+        "country": "Nigeria",
+        "period": "1940-1959",
+        "question": "What art form featured carved wooden figures?",
+        "answer": "Wood carving or sculpture",
+        "funFact": "Nigerian wood carvers created masks and statues."
+    },
+    {
+        "country": "Nigeria",
+        "period": "1940-1959",
+        "question": "What spice is commonly used in Nigerian cooking?",
+        "answer": "Pepper",
+        "funFact": "Nigerian cuisine is known for being spicy."
+    },
+    {
+        "country": "Nigeria",
+        "period": "1940-1959",
+        "question": "What traditional leader ruled over communities?",
+        "answer": "Chiefs or Obas",
+        "funFact": "Traditional rulers held important cultural positions."
+    },
+    {
+        "country": "Nigeria",
+        "period": "1940-1959",
+        "question": "What celebration marked the harvest season?",
+        "answer": "Harvest festival or New Yam Festival",
+        "funFact": "Communities celebrated successful harvests together."
+    },
+    {
+        "country": "Nigeria",
+        "period": "1940-1959",
+        "question": "What transportation carried goods on rivers?",
+        "answer": "Canoes or boats",
+        "funFact": "Rivers were important trade routes."
+    },
+    {
+        "country": "Nigeria",
+        "period": "1940-1959",
+        "question": "What traditional Nigerian drink is made from palm trees?",
+        "answer": "Palm wine",
+        "funFact": "Palm wine is tapped from palm trees and consumed fresh."
+    },
+    {
+        "country": "Nigeria",
+        "period": "1940-1959",
+        "question": "What system of belief involved ancestors?",
+        "answer": "Ancestor worship or veneration",
+        "funFact": "Many Nigerians honored their ancestors through rituals."
+    },
+    {
+        "country": "Nigeria",
+        "period": "1940-1959",
+        "question": "What festival featured colorful masquerades?",
+        "answer": "Masquerade festivals",
+        "funFact": "Masked dancers represented spirits and deities."
     },
     {
         "country": "Nigeria",
@@ -60,28 +1061,420 @@
         "period": "1960-1979",
         "question": "What music genre emerged from Nigeria?",
         "answer": "Afrobeat",
-        "funFact": "Fela Kuti is considered the pioneer of Afrobeat music."
+        "funFact": "Fela Kuti pioneered Afrobeat music in the 1970s."
     },
     {
         "country": "Nigeria",
         "period": "1960-1979",
         "question": "What is Nigeria's most populous city?",
         "answer": "Lagos",
-        "funFact": "Lagos was Nigeria's capital until 1991."
+        "funFact": "Lagos was the capital until 1991."
+    },
+    {
+        "country": "Nigeria",
+        "period": "1960-1979",
+        "question": "What sporting event did Nigeria host in 1973?",
+        "answer": "The All-Africa Games",
+        "funFact": "This was held in Lagos."
+    },
+    {
+        "country": "Nigeria",
+        "period": "1960-1979",
+        "question": "How many official languages does Nigeria have?",
+        "answer": "One, English",
+        "funFact": "Nigeria has over 500 indigenous languages."
+    },
+    {
+        "country": "Nigeria",
+        "period": "1960-1979",
+        "question": "What is the traditional drum used in Nigerian music?",
+        "answer": "The talking drum or dundun",
+        "funFact": "The talking drum can mimic human speech."
+    },
+    {
+        "country": "Nigeria",
+        "period": "1960-1979",
+        "question": "What Nigerian author wrote Things Fall Apart?",
+        "answer": "Chinua Achebe",
+        "funFact": "Published in 1958, it's widely read worldwide."
+    },
+    {
+        "country": "Nigeria",
+        "period": "1960-1979",
+        "question": "What three major ethnic groups make up Nigeria?",
+        "answer": "Hausa, Yoruba, and Igbo",
+        "funFact": "Nigeria is Africa's most populous country."
+    },
+    {
+        "country": "Nigeria",
+        "period": "1960-1979",
+        "question": "What form of storytelling involves moral lessons?",
+        "answer": "Folktales",
+        "funFact": "Nigerian folktales often feature clever animals like the tortoise."
+    },
+    {
+        "country": "Nigeria",
+        "period": "1960-1979",
+        "question": "What year did Nigeria become a republic?",
+        "answer": "1963",
+        "funFact": "Nigeria transitioned from monarchy to republic."
+    },
+    {
+        "country": "Nigeria",
+        "period": "1960-1979",
+        "question": "What traditional Nigerian soup is eaten with pounded yam?",
+        "answer": "Egusi soup or ogbono soup",
+        "funFact": "Egusi is made from melon seeds."
+    },
+    {
+        "country": "Nigeria",
+        "period": "1960-1979",
+        "question": "What major industry became important in the 1970s?",
+        "answer": "Oil industry",
+        "funFact": "Nigeria became one of Africa's largest oil producers."
+    },
+    {
+        "country": "Nigeria",
+        "period": "1960-1979",
+        "question": "What Nigerian musician was known as the Black President?",
+        "answer": "Fela Kuti",
+        "funFact": "Fela was also a political activist."
+    },
+    {
+        "country": "Nigeria",
+        "period": "1960-1979",
+        "question": "What traditional Nigerian clothing is worn by women?",
+        "answer": "Buba and wrapper or iro and buba",
+        "funFact": "This is traditional Yoruba women's attire."
+    },
+    {
+        "country": "Nigeria",
+        "period": "1960-1979",
+        "question": "What festival celebrates yam harvest?",
+        "answer": "New Yam Festival",
+        "funFact": "This is celebrated by the Igbo people."
+    },
+    {
+        "country": "Nigeria",
+        "period": "1960-1979",
+        "question": "What Nigerian poet won the Nobel Prize in 1986?",
+        "answer": "Wole Soyinka",
+        "funFact": "He was the first African to win the Nobel Prize in Literature."
+    },
+    {
+        "country": "Nigeria",
+        "period": "1960-1979",
+        "question": "What type of music used traditional drums and rhythms?",
+        "answer": "Highlife or juju music",
+        "funFact": "Highlife originated in Ghana and spread to Nigeria."
+    },
+    {
+        "country": "Nigeria",
+        "period": "1960-1979",
+        "question": "What was the capital before Abuja?",
+        "answer": "Lagos",
+        "funFact": "Lagos remained capital for over a century."
+    },
+    {
+        "country": "Nigeria",
+        "period": "1960-1979",
+        "question": "What traditional Nigerian headtie is worn by women?",
+        "answer": "Gele",
+        "funFact": "The gele is an elaborate head wrap for special occasions."
+    },
+    {
+        "country": "Nigeria",
+        "period": "1960-1979",
+        "question": "What university was the first in Nigeria?",
+        "answer": "University of Ibadan",
+        "funFact": "Founded in 1948, it became independent in 1962."
+    },
+    {
+        "country": "Nigeria",
+        "period": "1960-1979",
+        "question": "What spicy stew is made with tomatoes and peppers?",
+        "answer": "Nigerian stew or tomato stew",
+        "funFact": "This is a staple in Nigerian cooking."
+    },
+    {
+        "country": "Nigeria",
+        "period": "1960-1979",
+        "question": "What traditional ruler is called in Yoruba land?",
+        "answer": "Oba",
+        "funFact": "Obas are traditional kings in Yoruba communities."
+    },
+    {
+        "country": "Nigeria",
+        "period": "1960-1979",
+        "question": "What Nigerian currency replaced the British pound?",
+        "answer": "The Naira",
+        "funFact": "The Naira was introduced in 1973."
+    },
+    {
+        "country": "Nigeria",
+        "period": "1960-1979",
+        "question": "What is the traditional Nigerian drum ensemble called?",
+        "answer": "Dundun ensemble",
+        "funFact": "It includes various sizes of talking drums."
+    },
+    {
+        "country": "Nigeria",
+        "period": "1960-1979",
+        "question": "What fried dough balls are eaten for breakfast?",
+        "answer": "Puff puff",
+        "funFact": "Puff puff is similar to doughnuts."
+    },
+    {
+        "country": "Nigeria",
+        "period": "1960-1979",
+        "question": "What traditional Nigerian game involves seeds and a board?",
+        "answer": "Ayo or mancala",
+        "funFact": "Ayo is played throughout West Africa."
+    },
+    {
+        "country": "Nigeria",
+        "period": "1960-1979",
+        "question": "What Nigerian boxer became world champion?",
+        "answer": "Dick Tiger",
+        "funFact": "Dick Tiger was world middleweight champion."
+    },
+    {
+        "country": "Nigeria",
+        "period": "1960-1979",
+        "question": "What tree produces kola nuts?",
+        "answer": "Kola tree",
+        "funFact": "Kola nuts are used in traditional ceremonies."
+    },
+    {
+        "country": "Nigeria",
+        "period": "1960-1979",
+        "question": "What traditional Nigerian sport involves wrestling?",
+        "answer": "Traditional wrestling",
+        "funFact": "Wrestling is popular among many Nigerian ethnic groups."
+    },
+    {
+        "country": "Nigeria",
+        "period": "1960-1979",
+        "question": "What beverage is made from hibiscus flowers?",
+        "answer": "Zobo",
+        "funFact": "Zobo is a refreshing red drink served cold."
     },
     {
         "country": "Nigeria",
         "period": "1980-1999",
-        "question": "In what year did Abuja become Nigeria's capital?",
+        "question": "What is Nigeria's dish made from cassava?",
+        "answer": "Garri or fufu",
+        "funFact": "Garri is made from fermented cassava."
+    },
+    {
+        "country": "Nigeria",
+        "period": "1980-1999",
+        "question": "What music style emerged in the 1990s?",
+        "answer": "Nigerian hip hop or Afrobeats",
+        "funFact": "This blends traditional rhythms with hip hop."
+    },
+    {
+        "country": "Nigeria",
+        "period": "1980-1999",
+        "question": "In what year did Abuja become the capital?",
         "answer": "1991",
         "funFact": "Abuja was built in the center of the country."
     },
     {
         "country": "Nigeria",
         "period": "1980-1999",
-        "question": "What is the name of Nigeria's film industry?",
+        "question": "What is Nigeria's film industry called?",
         "answer": "Nollywood",
         "funFact": "Nollywood is the second-largest film industry in the world."
+    },
+    {
+        "country": "Nigeria",
+        "period": "1980-1999",
+        "question": "What is Nigeria's national football team called?",
+        "answer": "The Super Eagles",
+        "funFact": "The Super Eagles won the African Cup in 1980 and 1994."
+    },
+    {
+        "country": "Nigeria",
+        "period": "1980-1999",
+        "question": "What spicy soup is made with okra?",
+        "answer": "Okra soup",
+        "funFact": "Okra soup is eaten with pounded yam or fufu."
+    },
+    {
+        "country": "Nigeria",
+        "period": "1980-1999",
+        "question": "What celebration involves elaborate masquerades?",
+        "answer": "Eyo Festival or masquerade festivals",
+        "funFact": "These colorful festivals feature masked dancers."
+    },
+    {
+        "country": "Nigeria",
+        "period": "1980-1999",
+        "question": "What Nigerian athlete won Olympic gold in 1996?",
+        "answer": "Chioma Ajunwa",
+        "funFact": "She won gold in the long jump."
+    },
+    {
+        "country": "Nigeria",
+        "period": "1980-1999",
+        "question": "What popular Nigerian dish is rice cooked in tomato sauce?",
+        "answer": "Jollof rice",
+        "funFact": "There's friendly competition over who makes the best jollof."
+    },
+    {
+        "country": "Nigeria",
+        "period": "1980-1999",
+        "question": "What telecommunications company became popular in the 1990s?",
+        "answer": "MTN or mobile phone companies",
+        "funFact": "Mobile phones revolutionized communication in Nigeria."
+    },
+    {
+        "country": "Nigeria",
+        "period": "1980-1999",
+        "question": "What Nigerian musician was known for juju music?",
+        "answer": "King Sunny Ade",
+        "funFact": "He brought juju music to international attention."
+    },
+    {
+        "country": "Nigeria",
+        "period": "1980-1999",
+        "question": "What traditional Nigerian garment is worn by men?",
+        "answer": "Agbada or Kaftan",
+        "funFact": "The agbada is a flowing robe for special occasions."
+    },
+    {
+        "country": "Nigeria",
+        "period": "1980-1999",
+        "question": "What Nigerian football team won Olympic gold in 1996?",
+        "answer": "The Dream Team or Nigerian Olympic football team",
+        "funFact": "Nigeria beat Argentina to win gold in Atlanta."
+    },
+    {
+        "country": "Nigeria",
+        "period": "1980-1999",
+        "question": "What popular Nigerian snack is made from plantains?",
+        "answer": "Plantain chips or dodo",
+        "funFact": "Plantains can be fried, boiled, or roasted."
+    },
+    {
+        "country": "Nigeria",
+        "period": "1980-1999",
+        "question": "What Nigerian author wrote Purple Hibiscus?",
+        "answer": "Chimamanda Ngozi Adichie",
+        "funFact": "She became internationally acclaimed in the 2000s."
+    },
+    {
+        "country": "Nigeria",
+        "period": "1980-1999",
+        "question": "What traditional festival celebrates Osun River?",
+        "answer": "Osun-Osogbo Festival",
+        "funFact": "This festival honors the Yoruba goddess Osun."
+    },
+    {
+        "country": "Nigeria",
+        "period": "1980-1999",
+        "question": "What became a major export besides oil?",
+        "answer": "Cocoa or rubber",
+        "funFact": "Nigeria was a major cocoa producer."
+    },
+    {
+        "country": "Nigeria",
+        "period": "1980-1999",
+        "question": "What popular Nigerian music featured call-and-response?",
+        "answer": "Fuji music",
+        "funFact": "Fuji music emerged from Islamic traditions."
+    },
+    {
+        "country": "Nigeria",
+        "period": "1980-1999",
+        "question": "What traditional soup is made with bitter leaves?",
+        "answer": "Bitter leaf soup or ofe onugbu",
+        "funFact": "Despite the name, it's delicious when cooked properly."
+    },
+    {
+        "country": "Nigeria",
+        "period": "1980-1999",
+        "question": "What Nigerian city is known as the Garden City?",
+        "answer": "Port Harcourt",
+        "funFact": "Port Harcourt is in the oil-rich Niger Delta."
+    },
+    {
+        "country": "Nigeria",
+        "period": "1980-1999",
+        "question": "What popular street food is grilled meat on sticks?",
+        "answer": "Suya",
+        "funFact": "Suya is spiced with ground peanuts and peppers."
+    },
+    {
+        "country": "Nigeria",
+        "period": "1980-1999",
+        "question": "What Nigerian musician sang Sweet Mother?",
+        "answer": "Prince Nico Mbarga",
+        "funFact": "Sweet Mother became one of Africa's biggest hits."
+    },
+    {
+        "country": "Nigeria",
+        "period": "1980-1999",
+        "question": "What traditional Nigerian dance involves acrobatics?",
+        "answer": "Atilogwu",
+        "funFact": "Atilogwu is an energetic Igbo dance."
+    },
+    {
+        "country": "Nigeria",
+        "period": "1980-1999",
+        "question": "What banking system became more common?",
+        "answer": "Commercial banks",
+        "funFact": "Banking expanded significantly in urban areas."
+    },
+    {
+        "country": "Nigeria",
+        "period": "1980-1999",
+        "question": "What popular Nigerian breakfast is beans and plantain?",
+        "answer": "Ewa and dodo",
+        "funFact": "This is a common street food combination."
+    },
+    {
+        "country": "Nigeria",
+        "period": "1980-1999",
+        "question": "What Nigerian university is in the ancient city of Ile-Ife?",
+        "answer": "Obafemi Awolowo University",
+        "funFact": "It was formerly called University of Ife."
+    },
+    {
+        "country": "Nigeria",
+        "period": "1980-1999",
+        "question": "What drink is made from corn?",
+        "answer": "Kunu",
+        "funFact": "Kunu is a popular Northern Nigerian drink."
+    },
+    {
+        "country": "Nigeria",
+        "period": "1980-1999",
+        "question": "What traditional fabric is tie-dyed?",
+        "answer": "Adire",
+        "funFact": "Adire cloth features indigo patterns."
+    },
+    {
+        "country": "Nigeria",
+        "period": "1980-1999",
+        "question": "What transportation became common in cities?",
+        "answer": "Danfo buses or molue",
+        "funFact": "These yellow buses are iconic in Lagos."
+    },
+    {
+        "country": "Nigeria",
+        "period": "1980-1999",
+        "question": "What Nigerian boxer fought for world titles?",
+        "answer": "Bash Ali",
+        "funFact": "Bash Ali was a cruiserweight boxer."
+    },
+    {
+        "country": "Nigeria",
+        "period": "2000-2019",
+        "question": "What Nigerian artist became internationally famous?",
+        "answer": "Wizkid or Davido or Burna Boy",
+        "funFact": "Nigerian artists brought Afrobeats to global audiences."
     },
     {
         "country": "Nigeria",
@@ -93,50 +1486,197 @@
     {
         "country": "Nigeria",
         "period": "2000-2019",
+        "question": "What Nigerian author won awards for Half of a Yellow Sun?",
+        "answer": "Chimamanda Ngozi Adichie",
+        "funFact": "She became a globally recognized literary voice."
+    },
+    {
+        "country": "Nigeria",
+        "period": "2000-2019",
         "question": "What is Nigeria's currency called?",
         "answer": "The Naira",
-        "funFact": "The Naira replaced the British pound in 1973."
-    },
-    {
-        "country": "USA",
-        "period": "1940-1959",
-        "question": "What year did World War II end?",
-        "answer": "1945",
-        "funFact": "The war ended with Japan's surrender on September 2, 1945."
-    },
-    {
-        "country": "USA",
-        "period": "1940-1959",
-        "question": "What iconic highway system opened in 1956?",
-        "answer": "The Interstate Highway System",
-        "funFact": "President Eisenhower signed the act creating 41,000 miles of highways."
+        "funFact": "The Naira was introduced in 1973."
     },
     {
         "country": "Nigeria",
-        "period": "1940-1959",
-        "question": "What was the capital of Nigeria in the 1950s?",
-        "answer": "Lagos",
-        "funFact": "Lagos served as the capital until 1991."
+        "period": "2000-2019",
+        "question": "What technology helped Nigeria's economy grow?",
+        "answer": "Mobile phones and telecommunications",
+        "funFact": "Nigeria experienced a mobile phone revolution."
     },
     {
         "country": "Nigeria",
-        "period": "1940-1959",
-        "question": "What major river flows through Nigeria?",
-        "answer": "The Niger River",
-        "funFact": "The Niger River is the third-longest river in Africa."
-    },
-    {
-        "country": "USA",
-        "period": "1960-1979",
-        "question": "What major civil rights leader gave the 'I Have a Dream' speech?",
-        "answer": "Martin Luther King Jr.",
-        "funFact": "The speech was delivered in 1963."
+        "period": "2000-2019",
+        "question": "What is the traditional Nigerian garment for men?",
+        "answer": "Agbada or Kaftan",
+        "funFact": "The agbada is worn for weddings and celebrations."
     },
     {
         "country": "Nigeria",
-        "period": "1960-1979",
-        "question": "What Nigerian author wrote Things Fall Apart?",
-        "answer": "Chinua Achebe",
-        "funFact": "Published in 1958, it became widely read worldwide."
+        "period": "2000-2019",
+        "question": "What is jollof rice?",
+        "answer": "A popular Nigerian rice dish",
+        "funFact": "There's friendly rivalry over who makes the best jollof."
+    },
+    {
+        "country": "Nigeria",
+        "period": "2000-2019",
+        "question": "What Nigerian musician won a Grammy in 2021?",
+        "answer": "Burna Boy",
+        "funFact": "He won for his album Twice as Tall."
+    },
+    {
+        "country": "Nigeria",
+        "period": "2000-2019",
+        "question": "What online payment system became popular?",
+        "answer": "Mobile banking or Paystack",
+        "funFact": "Digital payments transformed Nigerian commerce."
+    },
+    {
+        "country": "Nigeria",
+        "period": "2000-2019",
+        "question": "What Nigerian tech hub is known as Africa's Silicon Valley?",
+        "answer": "Yaba in Lagos",
+        "funFact": "Yaba became a center for tech startups."
+    },
+    {
+        "country": "Nigeria",
+        "period": "2000-2019",
+        "question": "What popular Nigerian genre blends hip hop and Afrobeat?",
+        "answer": "Afrobeats",
+        "funFact": "Different from Fela's Afrobeat, with an 's'."
+    },
+    {
+        "country": "Nigeria",
+        "period": "2000-2019",
+        "question": "What Nigerian film won international acclaim?",
+        "answer": "Lionheart or Half of a Yellow Sun",
+        "funFact": "Nollywood films reached global streaming platforms."
+    },
+    {
+        "country": "Nigeria",
+        "period": "2000-2019",
+        "question": "What social media platform became hugely popular?",
+        "answer": "Twitter or Instagram",
+        "funFact": "Nigerians became active on social media."
+    },
+    {
+        "country": "Nigeria",
+        "period": "2000-2019",
+        "question": "What Nigerian artist collaborated with Drake?",
+        "answer": "Wizkid",
+        "funFact": "Their song One Dance topped charts worldwide."
+    },
+    {
+        "country": "Nigeria",
+        "period": "2000-2019",
+        "question": "What fashion movement celebrates African prints?",
+        "answer": "Ankara fashion",
+        "funFact": "African fashion gained global recognition."
+    },
+    {
+        "country": "Nigeria",
+        "period": "2000-2019",
+        "question": "What Nigerian comedian became internationally known?",
+        "answer": "Basketmouth or AY",
+        "funFact": "Nigerian comedians toured worldwide."
+    },
+    {
+        "country": "Nigeria",
+        "period": "2000-2019",
+        "question": "What ride-hailing service operates in Nigeria?",
+        "answer": "Uber or Bolt",
+        "funFact": "Ride-hailing transformed urban transportation."
+    },
+    {
+        "country": "Nigeria",
+        "period": "2000-2019",
+        "question": "What Nigerian festival celebrates African culture?",
+        "answer": "Felabration",
+        "funFact": "Felabration honors Fela Kuti's legacy."
+    },
+    {
+        "country": "Nigeria",
+        "period": "2000-2019",
+        "question": "What online marketplace became popular for shopping?",
+        "answer": "Jumia",
+        "funFact": "Jumia became Africa's first unicorn startup."
+    },
+    {
+        "country": "Nigeria",
+        "period": "2000-2019",
+        "question": "What Nigerian DJ became globally famous?",
+        "answer": "DJ Cuppy or DJ Spinall",
+        "funFact": "Nigerian DJs toured international festivals."
+    },
+    {
+        "country": "Nigeria",
+        "period": "2000-2019",
+        "question": "What sport besides football became popular?",
+        "answer": "Basketball",
+        "funFact": "Nigeria qualified for multiple Basketball World Cups."
+    },
+    {
+        "country": "Nigeria",
+        "period": "2000-2019",
+        "question": "What Nigerian musician sang African Queen?",
+        "answer": "2Baba or 2face Idibia",
+        "funFact": "African Queen became an anthem."
+    },
+    {
+        "country": "Nigeria",
+        "period": "2000-2019",
+        "question": "What video streaming service featured Nollywood films?",
+        "answer": "Netflix or IrokoTV",
+        "funFact": "Nollywood reached global streaming platforms."
+    },
+    {
+        "country": "Nigeria",
+        "period": "2000-2019",
+        "question": "What Nigerian runner won Olympic medals?",
+        "answer": "Blessing Okagbare",
+        "funFact": "She won medals in long jump and sprinting."
+    },
+    {
+        "country": "Nigeria",
+        "period": "2000-2019",
+        "question": "What food delivery service became popular?",
+        "answer": "Jumia Food or food delivery apps",
+        "funFact": "Food delivery apps transformed dining habits."
+    },
+    {
+        "country": "Nigeria",
+        "period": "2000-2019",
+        "question": "What Nigerian artist collaborated with Beyoncé?",
+        "answer": "Wizkid or Burna Boy",
+        "funFact": "They featured on Beyoncé's Lion King album."
+    },
+    {
+        "country": "Nigeria",
+        "period": "2000-2019",
+        "question": "What movement advocated for police reform?",
+        "answer": "End SARS",
+        "funFact": "End SARS protests spread globally in 2020."
+    },
+    {
+        "country": "Nigeria",
+        "period": "2000-2019",
+        "question": "What Nigerian tech company went public?",
+        "answer": "Interswitch or Flutterwave",
+        "funFact": "Nigerian fintech companies attracted global investment."
+    },
+    {
+        "country": "Nigeria",
+        "period": "2000-2019",
+        "question": "What cultural event celebrates fashion in Lagos?",
+        "answer": "Lagos Fashion Week",
+        "funFact": "It showcases African designers."
+    },
+    {
+        "country": "Nigeria",
+        "period": "2000-2019",
+        "question": "What Nigerian actress became a UN ambassador?",
+        "answer": "Genevieve Nnaji",
+        "funFact": "She also directed the film Lionheart."
     }
 ]

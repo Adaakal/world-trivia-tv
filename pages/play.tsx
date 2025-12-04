@@ -23,10 +23,9 @@ export default function Play() {
   const [hasEnded, setHasEnded] = useState(false);
   const [highContrast, setHighContrast] = useState(false);
   const [largeText, setLargeText] = useState(false);
-  const [countdown, setCountdown] = useState(0);
+  const [countdown, setCountdown] = useState(8);
 
-  const questionTimerRef = useRef<NodeJS.Timeout>();
-  const countdownIntervalRef = useRef<NodeJS.Timeout>();
+  const timerIntervalRef = useRef<NodeJS.Timeout>();
 
   const speak = (text: string) => {
     if (typeof window !== 'undefined' && window.speechSynthesis) {
@@ -72,55 +71,64 @@ export default function Play() {
     fetchTrivia();
   }, [country, period, count]);
 
+  // Timer effect - runs every second
   useEffect(() => {
+    // Don't run timer if paused, loading, error, or ended
     if (loading || error || triviaItems.length === 0 || isPaused || hasEnded) {
-      if (questionTimerRef.current) clearTimeout(questionTimerRef.current);
-      if (countdownIntervalRef.current) clearInterval(countdownIntervalRef.current);
+      if (timerIntervalRef.current) {
+        clearInterval(timerIntervalRef.current);
+      }
       return;
     }
 
     const currentItem = triviaItems[currentIndex];
 
-    if (questionTimerRef.current) clearTimeout(questionTimerRef.current);
-    if (countdownIntervalRef.current) clearInterval(countdownIntervalRef.current);
-
-    if (!showAnswer) {
-      speak(currentItem.question);
-      setCountdown(0);
-
-      questionTimerRef.current = setTimeout(() => {
-        setShowAnswer(true);
-        const answerText = currentItem.funFact 
-          ? `The answer is: ${currentItem.answer}. ${currentItem.funFact}`
-          : `The answer is: ${currentItem.answer}`;
-        speak(answerText);
-        setCountdown(6);
-      }, 8000);
-    } else {
-      if (countdown > 0) {
-        countdownIntervalRef.current = setInterval(() => {
-          setCountdown(prev => {
-            if (prev <= 1) {
-              if (currentIndex < triviaItems.length - 1) {
-                setCurrentIndex(currentIndex + 1);
-                setShowAnswer(false);
-              } else {
-                setHasEnded(true);
-                speak('Trivia has finished. You can replay from the beginning or go back to the menu.');
-              }
+    // Start countdown interval
+    timerIntervalRef.current = setInterval(() => {
+      setCountdown(prev => {
+        console.log('Countdown:', prev); // Debug log
+        
+        if (prev <= 1) {
+          if (!showAnswer) {
+            // Time to show the answer
+            setShowAnswer(true);
+            const answerText = currentItem.funFact 
+              ? `The answer is: ${currentItem.answer}. ${currentItem.funFact}`
+              : `The answer is: ${currentItem.answer}`;
+            speak(answerText);
+            return 6; // Reset to 6 seconds for next question countdown
+          } else {
+            // Time to move to next question
+            if (currentIndex < triviaItems.length - 1) {
+              setCurrentIndex(currentIndex + 1);
+              setShowAnswer(false);
+              return 8; // Reset to 8 seconds for question
+            } else {
+              setHasEnded(true);
+              speak('Trivia has finished. You can replay from the beginning or go back to the menu.');
               return 0;
             }
-            return prev - 1;
-          });
-        }, 1000);
-      }
-    }
+          }
+        }
+        return prev - 1;
+      });
+    }, 1000);
 
     return () => {
-      if (questionTimerRef.current) clearTimeout(questionTimerRef.current);
-      if (countdownIntervalRef.current) clearInterval(countdownIntervalRef.current);
+      if (timerIntervalRef.current) {
+        clearInterval(timerIntervalRef.current);
+      }
     };
-  }, [currentIndex, triviaItems, loading, error, isPaused, hasEnded, showAnswer, countdown]);
+  }, [currentIndex, showAnswer, isPaused, loading, error, hasEnded, triviaItems]);
+
+  // Speak question when it changes
+  useEffect(() => {
+    if (!loading && !error && triviaItems.length > 0 && !isPaused && !hasEnded && !showAnswer) {
+      const currentItem = triviaItems[currentIndex];
+      speak(currentItem.question);
+      setCountdown(8); // Reset countdown when new question loads
+    }
+  }, [currentIndex, triviaItems, loading, error, isPaused, hasEnded, showAnswer]);
 
   const handlePausePlay = () => {
     if (isPaused) {
@@ -152,7 +160,7 @@ export default function Play() {
     if (currentIndex < triviaItems.length - 1) {
       setCurrentIndex(currentIndex + 1);
       setShowAnswer(false);
-      setCountdown(0);
+      setCountdown(8);
       speak('Moving to next question');
     } else {
       setHasEnded(true);
@@ -165,7 +173,7 @@ export default function Play() {
     setShowAnswer(false);
     setHasEnded(false);
     setIsPaused(false);
-    setCountdown(0);
+    setCountdown(8);
     speak('Restarting trivia from the beginning');
   };
 
@@ -301,6 +309,17 @@ export default function Play() {
             </p>
           </div>
 
+          {/* TIMER DISPLAY - Show before answer */}
+          {!showAnswer && !isPaused && (
+            <div className="text-center mb-8">
+              <div className="inline-block bg-yellow-500 text-black px-12 py-6 rounded-full">
+                <p className={`${textSize} font-bold`}>
+                  ⏱️ Answer in: {countdown} second{countdown !== 1 ? 's' : ''}
+                </p>
+              </div>
+            </div>
+          )}
+
           <main className="text-center">
             <div className="mb-16">
               <h1 className={`${questionSize} font-bold leading-tight`}>
@@ -323,7 +342,7 @@ export default function Play() {
                 )}
                 {countdown > 0 && !isPaused && (
                   <p className={`${textSize} mt-8 text-yellow-300 font-bold`}>
-                    Next question in {countdown} second{countdown !== 1 ? 's' : ''}...
+                    ⏭️ Next question in {countdown} second{countdown !== 1 ? 's' : ''}...
                   </p>
                 )}
               </div>
@@ -332,6 +351,7 @@ export default function Play() {
             {isPaused && (
               <div className="mt-20 p-8 bg-yellow-500 text-black rounded-2xl">
                 <p className={`${textSize} font-bold`}>⏸️ Paused</p>
+                <p className={`${textSize} mt-4`}>Press Resume to continue</p>
               </div>
             )}
           </main>
