@@ -1,20 +1,45 @@
-import { useState, useEffect } from 'react';
-import { useRouter } from 'next/router';
-import Head from 'next/head';
+import { useState, useEffect } from "react";
+import { useRouter } from "next/router";
+import Head from "next/head";
 
-const countries = ['USA', 'Nigeria'];
-const periods = ['1940-1959', '1960-1979', '1980-1999', '2000-2019', 'Any Time'];
+const countries = [
+  "USA",
+  "Nigeria",
+  "Mexico",
+  "Brazil",
+  "Japan",
+  "India",
+  "United Kingdom",
+  "France",
+  "Germany",
+  "Italy",
+  "China",
+  "South Korea",
+  "Kenya",
+  "Egypt",
+  "Australia",
+];
+
+const periods = [
+  "1940-1959",
+  "1960-1979",
+  "1980-1999",
+  "2000-2019",
+  "Any Time",
+];
 
 export default function Home() {
   const router = useRouter();
-  const [selectedCountry, setSelectedCountry] = useState('');
-  const [selectedPeriod, setSelectedPeriod] = useState('');
+  const [selectedCountries, setSelectedCountries] = useState<string[]>([]);
+  const [selectedPeriod, setSelectedPeriod] = useState("");
   const [questionCount, setQuestionCount] = useState(10);
   const [highContrast, setHighContrast] = useState(false);
   const [largeText, setLargeText] = useState(false);
+  const [isVoiceActive, setIsVoiceActive] = useState(false);
+  const [voiceCommand, setVoiceCommand] = useState("");
 
   const speak = (text: string) => {
-    if (typeof window !== 'undefined' && window.speechSynthesis) {
+    if (typeof window !== "undefined" && window.speechSynthesis) {
       window.speechSynthesis.cancel();
       const utterance = new SpeechSynthesisUtterance(text);
       utterance.rate = 0.85;
@@ -26,14 +51,71 @@ export default function Home() {
 
   useEffect(() => {
     const timer = setTimeout(() => {
-      speak('Welcome to World Trivia TV. Choose a country, a time period, and how many questions you want to answer, then press Start.');
+      speak(
+        "Welcome to World Trivia TV. Choose 2 countries, a time period, and how many questions you want to answer, then press Start."
+      );
     }, 800);
     return () => clearTimeout(timer);
   }, []);
 
+  // Voice command listener
+  useEffect(() => {
+    if (!isVoiceActive) return;
+
+    const SpeechRecognition =
+      (window as any).SpeechRecognition ||
+      (window as any).webkitSpeechRecognition;
+
+    if (!SpeechRecognition) {
+      speak("Voice commands are not supported on this device");
+      setIsVoiceActive(false);
+      return;
+    }
+
+    const recognition = new SpeechRecognition();
+    recognition.continuous = true;
+    recognition.interimResults = false;
+    recognition.lang = "en-US";
+
+    recognition.onresult = (event: any) => {
+      const last = event.results.length - 1;
+      const command = event.results[last][0].transcript.toLowerCase();
+      setVoiceCommand(command);
+
+      console.log("Voice command received:", command);
+
+      // Process commands
+      if (command.includes("start") || command.includes("begin")) {
+        if (selectedCountries.length === 2 && selectedPeriod) {
+          handleStart();
+        } else {
+          speak("Please select 2 countries and a time period first");
+        }
+      }
+    };
+
+    recognition.onerror = (event: any) => {
+      console.log("Speech recognition error:", event.error);
+    };
+
+    recognition.start();
+
+    return () => {
+      recognition.stop();
+    };
+  }, [isVoiceActive, selectedCountries, selectedPeriod]);
+
   const handleCountrySelect = (country: string) => {
-    setSelectedCountry(country);
-    speak(country);
+    if (selectedCountries.includes(country)) {
+      // Deselect if already selected
+      setSelectedCountries(selectedCountries.filter((c) => c !== country));
+    } else if (selectedCountries.length < 2) {
+      // Add if less than 2 selected
+      setSelectedCountries([...selectedCountries, country]);
+      speak(country);
+    } else {
+      speak("You can only select 2 countries. Please deselect one first.");
+    }
   };
 
   const handlePeriodSelect = (period: string) => {
@@ -47,85 +129,150 @@ export default function Home() {
   };
 
   const handleStart = () => {
-    if (selectedCountry && selectedPeriod) {
-      speak(`Starting trivia with ${questionCount} questions`);
-      const periodParam = selectedPeriod === 'Any Time' ? 'any' : selectedPeriod;
-      router.push(`/play?country=${selectedCountry}&period=${periodParam}&count=${questionCount}`);
+    if (selectedCountries.length === 2 && selectedPeriod) {
+      speak(
+        `Starting trivia with ${questionCount} questions from ${selectedCountries[0]} and ${selectedCountries[1]}`
+      );
+      const periodParam =
+        selectedPeriod === "Any Time" ? "any" : selectedPeriod;
+      router.push(
+        `/play?countries=${selectedCountries.join(
+          ","
+        )}&period=${periodParam}&count=${questionCount}`
+      );
     }
   };
 
   const handleRepeatInstructions = () => {
-    speak('Welcome to World Trivia TV. Choose a country: USA or Nigeria. Then choose a time period. Select how many questions you want, from 5 to 15. Finally, press the Start Trivia button.');
+    speak(
+      "Welcome to World Trivia TV. Choose 2 countries from the list. Then choose a time period. Select how many questions you want, from 5 to 15. Finally, press the Start Trivia button."
+    );
   };
 
-  const containerClass = `min-h-screen p-8 ${highContrast ? 'bg-black' : 'bg-blue-900'} text-white`;
-  const textSize = largeText ? 'text-3xl' : 'text-2xl';
-  const headingSize = largeText ? 'text-7xl' : 'text-6xl';
-  const subHeadingSize = largeText ? 'text-5xl' : 'text-4xl';
-  
-  const buttonClass = `px-8 py-6 rounded-xl font-bold transition-all transform hover:scale-105 focus:outline-none focus:ring-4 focus:ring-yellow-400 ${highContrast ? 'bg-white text-black hover:bg-gray-200' : 'bg-blue-500 hover:bg-blue-400 text-white'}`;
+  const containerClass = `min-h-screen p-8 ${
+    highContrast ? "bg-black" : "bg-blue-900"
+  } text-white`;
+  const textSize = largeText ? "text-3xl" : "text-2xl";
+  const headingSize = largeText ? "text-7xl" : "text-6xl";
+  const subHeadingSize = largeText ? "text-5xl" : "text-4xl";
+
+  const buttonClass = `px-8 py-6 rounded-xl font-bold transition-all transform hover:scale-105 focus:outline-none focus:ring-4 focus:ring-yellow-400 ${
+    highContrast
+      ? "bg-white text-black hover:bg-gray-200"
+      : "bg-blue-500 hover:bg-blue-400 text-white"
+  }`;
   const selectedButtonClass = `px-8 py-6 rounded-xl font-bold transition-all ring-4 ring-yellow-300 bg-yellow-500 text-black focus:outline-none focus:ring-4 focus:ring-yellow-400`;
 
   return (
     <>
       <Head>
         <title>World Trivia TV - Home</title>
-        <meta name="description" content="World Trivia TV - Choose your country and time period" />
+        <meta
+          name="description"
+          content="World Trivia TV - Choose your country and time period"
+        />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
 
       <div className={containerClass}>
         <div className="max-w-7xl mx-auto">
           <header className="text-center mb-12">
-            <h1 className={`font-bold mb-6 ${headingSize}`}>🌍 World Trivia TV</h1>
-            <p className={`${textSize} mb-4`}>Choose your preferences to begin</p>
+            <h1 className={`font-bold mb-6 ${headingSize}`}>
+              🌍 World Trivia TV
+            </h1>
+            <p className={`${textSize} mb-4`}>
+              Choose your preferences to begin
+            </p>
           </header>
 
-          <section className="flex flex-wrap gap-4 mb-12 justify-center" aria-label="Display settings">
-            <button 
-              onClick={() => setHighContrast(!highContrast)} 
+          <section
+            className="flex flex-wrap gap-4 mb-12 justify-center"
+            aria-label="Display settings"
+          >
+            <button
+              onClick={() => setHighContrast(!highContrast)}
               className={buttonClass}
-              aria-label={`Toggle high contrast mode. Currently ${highContrast ? 'on' : 'off'}`}
+              aria-label={`Toggle high contrast mode. Currently ${
+                highContrast ? "on" : "off"
+              }`}
             >
-              {highContrast ? '☀️ Normal' : '🌙 High Contrast'}
+              {highContrast ? "☀️ Normal" : "🌙 High Contrast"}
             </button>
-            <button 
-              onClick={() => setLargeText(!largeText)} 
+            <button
+              onClick={() => setLargeText(!largeText)}
               className={buttonClass}
-              aria-label={`Toggle large text. Currently ${largeText ? 'large' : 'normal'}`}
+              aria-label={`Toggle large text. Currently ${
+                largeText ? "large" : "normal"
+              }`}
             >
-              🔍 {largeText ? 'Normal Text' : 'Larger Text'}
+              🔍 {largeText ? "Normal Text" : "Larger Text"}
             </button>
-            <button 
-              onClick={handleRepeatInstructions} 
+            <button
+              onClick={handleRepeatInstructions}
               className={buttonClass}
               aria-label="Repeat instructions"
             >
               🔊 Repeat Instructions
             </button>
+            <button
+              onClick={() => setIsVoiceActive(!isVoiceActive)}
+              className={`${buttonClass} ${
+                isVoiceActive ? "bg-red-600 hover:bg-red-500" : ""
+              }`}
+              aria-label="Toggle voice commands"
+            >
+              🎤 {isVoiceActive ? "Voice ON" : "Voice OFF"}
+            </button>
           </section>
 
-          <section className="mb-12" aria-labelledby="country-heading">
-            <h2 id="country-heading" className={`font-bold mb-6 text-center ${subHeadingSize}`}>
-              Choose Country
-            </h2>
-            <div className="grid grid-cols-2 gap-6 max-w-3xl mx-auto">
-              {countries.map((country) => (
-                <button
-                  key={country}
-                  onClick={() => handleCountrySelect(country)}
-                  className={selectedCountry === country ? selectedButtonClass : buttonClass}
-                  aria-pressed={selectedCountry === country}
-                  aria-label={`Select ${country}`}
-                >
-                  <span className={textSize}>{country}</span>
-                </button>
-              ))}
+          {voiceCommand && (
+            <div className="text-center mb-8 p-4 bg-blue-700 rounded-lg">
+              <p className={textSize}>Last command: "{voiceCommand}"</p>
             </div>
+          )}
+
+          <section className="mb-12" aria-labelledby="country-heading">
+            <h2
+              id="country-heading"
+              className={`font-bold mb-6 text-center ${subHeadingSize}`}
+            >
+              Choose 2 Countries ({selectedCountries.length}/2)
+            </h2>
+            <div className="grid grid-cols-2 md:grid-cols-3 gap-6">
+              {countries.map((country) => {
+                const isSelected = selectedCountries.includes(country);
+                const isDisabled = !isSelected && selectedCountries.length >= 2;
+
+                return (
+                  <button
+                    key={country}
+                    onClick={() => handleCountrySelect(country)}
+                    disabled={isDisabled}
+                    className={`${
+                      isSelected ? selectedButtonClass : buttonClass
+                    } ${isDisabled ? "opacity-30 cursor-not-allowed" : ""}`}
+                    aria-pressed={isSelected}
+                    aria-label={`Select ${country}`}
+                  >
+                    <span className={textSize}>{country}</span>
+                  </button>
+                );
+              })}
+            </div>
+            {selectedCountries.length > 0 && (
+              <div className="text-center mt-6">
+                <p className={`${textSize} text-yellow-300`}>
+                  Selected: {selectedCountries.join(" and ")}
+                </p>
+              </div>
+            )}
           </section>
 
           <section className="mb-12" aria-labelledby="period-heading">
-            <h2 id="period-heading" className={`font-bold mb-6 text-center ${subHeadingSize}`}>
+            <h2
+              id="period-heading"
+              className={`font-bold mb-6 text-center ${subHeadingSize}`}
+            >
               Choose Time Period
             </h2>
             <div className="grid grid-cols-2 md:grid-cols-3 gap-6">
@@ -133,7 +280,11 @@ export default function Home() {
                 <button
                   key={period}
                   onClick={() => handlePeriodSelect(period)}
-                  className={selectedPeriod === period ? selectedButtonClass : buttonClass}
+                  className={
+                    selectedPeriod === period
+                      ? selectedButtonClass
+                      : buttonClass
+                  }
                   aria-pressed={selectedPeriod === period}
                   aria-label={`Select ${period}`}
                 >
@@ -144,23 +295,32 @@ export default function Home() {
           </section>
 
           <section className="mb-12" aria-labelledby="count-heading">
-            <h2 id="count-heading" className={`font-bold mb-6 text-center ${subHeadingSize}`}>
+            <h2
+              id="count-heading"
+              className={`font-bold mb-6 text-center ${subHeadingSize}`}
+            >
               How Many Questions? (5-15)
             </h2>
             <div className="max-w-4xl mx-auto">
               <div className="flex items-center justify-center gap-8 mb-6">
                 <button
-                  onClick={() => handleQuestionCountChange(Math.max(5, questionCount - 1))}
+                  onClick={() =>
+                    handleQuestionCountChange(Math.max(5, questionCount - 1))
+                  }
                   className={buttonClass}
                   aria-label="Decrease question count"
                 >
                   <span className="text-4xl">−</span>
                 </button>
-                <div className={`${headingSize} font-bold text-yellow-300 min-w-[200px] text-center`}>
+                <div
+                  className={`${headingSize} font-bold text-yellow-300 min-w-[200px] text-center`}
+                >
                   {questionCount}
                 </div>
                 <button
-                  onClick={() => handleQuestionCountChange(Math.min(15, questionCount + 1))}
+                  onClick={() =>
+                    handleQuestionCountChange(Math.min(15, questionCount + 1))
+                  }
                   className={buttonClass}
                   aria-label="Increase question count"
                 >
@@ -172,7 +332,11 @@ export default function Home() {
                   <button
                     key={count}
                     onClick={() => handleQuestionCountChange(count)}
-                    className={questionCount === count ? selectedButtonClass : buttonClass}
+                    className={
+                      questionCount === count
+                        ? selectedButtonClass
+                        : buttonClass
+                    }
                     aria-pressed={questionCount === count}
                     aria-label={`Select ${count} questions`}
                   >
@@ -186,18 +350,20 @@ export default function Home() {
           <div className="text-center mt-16">
             <button
               onClick={handleStart}
-              disabled={!selectedCountry || !selectedPeriod}
+              disabled={selectedCountries.length !== 2 || !selectedPeriod}
               className={`${buttonClass} ${textSize} px-20 py-10 text-4xl ${
-                !selectedCountry || !selectedPeriod ? 'opacity-40 cursor-not-allowed' : 'hover:scale-110'
+                selectedCountries.length !== 2 || !selectedPeriod
+                  ? "opacity-40 cursor-not-allowed"
+                  : "hover:scale-110"
               }`}
               aria-label="Start trivia"
-              aria-disabled={!selectedCountry || !selectedPeriod}
+              aria-disabled={selectedCountries.length !== 2 || !selectedPeriod}
             >
               ▶️ Start Trivia
             </button>
-            {(!selectedCountry || !selectedPeriod) && (
+            {(selectedCountries.length !== 2 || !selectedPeriod) && (
               <p className={`mt-6 ${textSize} text-yellow-300`}>
-                Please select both a country and a time period
+                Please select 2 countries and a time period
               </p>
             )}
           </div>

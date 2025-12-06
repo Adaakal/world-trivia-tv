@@ -3,7 +3,7 @@ import { useRouter } from 'next/router';
 import Head from 'next/head';
 
 interface TriviaItem {
-  country: string;
+  countries: string;
   period: string;
   question: string;
   answer: string;
@@ -12,7 +12,8 @@ interface TriviaItem {
 
 export default function Play() {
   const router = useRouter();
-  const { country, period, count } = router.query;
+  const { countries, period, count } = router.query;
+
 
   const [triviaItems, setTriviaItems] = useState<TriviaItem[]>([]);
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -39,12 +40,14 @@ export default function Play() {
   };
 
   useEffect(() => {
-    if (!country || !period) return;
+    if (!countries || !period) return;
 
     const fetchTrivia = async () => {
       try {
         setLoading(true);
-        const response = await fetch(`/api/trivia?country=${country}&period=${period}`);
+        const response = await fetch(
+          `/api/trivia?countries=${countries}&period=${period}`
+        );
         const data = await response.json();
 
         if (!response.ok) {
@@ -58,7 +61,9 @@ export default function Play() {
           const requestedCount = count ? parseInt(count as string) : 10;
           const limitedItems = data.items.slice(0, requestedCount);
           setTriviaItems(limitedItems);
-          speak(`Starting trivia for ${country} with ${limitedItems.length} questions. Get ready for your first question.`);
+          speak(
+            `Starting trivia with ${limitedItems.length} questions. Get ready for your first question.`
+          );
         }
       } catch (err) {
         setError('Failed to load trivia. Please check your connection and try again.');
@@ -69,7 +74,7 @@ export default function Play() {
     };
 
     fetchTrivia();
-  }, [country, period, count]);
+  }, [countries, period, count]);
 
   // Timer effect - runs every second
   useEffect(() => {
@@ -237,7 +242,7 @@ export default function Play() {
               <div className={`${questionSize} mb-8`}>🎉</div>
               <h1 className={`${questionSize} mb-8 font-bold`}>Trivia Complete!</h1>
               <p className={`${textSize} mb-12`}>
-                You've finished all {triviaItems.length} questions for {country}.
+                You've finished all {triviaItems.length} questions for {countries}.
               </p>
               <div className="flex gap-6 justify-center flex-wrap">
                 <button onClick={handleReplay} className={`${buttonClass} ${textSize}`}>

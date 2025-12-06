@@ -29,16 +29,23 @@ export default function handler(
   res: NextApiResponse<ResponseData>
 ) {
   try {
-    const { country, period } = req.query;
+    const { countries, period } = req.query;
 
-    if (!country) {
-      return res.status(400).json({ error: 'Country parameter is required' });
+    if (!countries) {
+      return res.status(400).json({ error: 'Countries parameter is required' });
     }
 
+    // Split countries string into array
+    const countryList = (countries as string).split(',');
+
+    // Filter by countries
     let filtered = triviaData.filter(
-      (item: TriviaItem) => item.country.toLowerCase() === (country as string).toLowerCase()
+      (item: TriviaItem) => countryList.some(c => 
+        item.country.toLowerCase() === c.toLowerCase()
+      )
     );
 
+    // Filter by period if specified
     if (period && period !== 'any' && (period as string).toLowerCase() !== 'any time') {
       filtered = filtered.filter(
         (item: TriviaItem) => item.period === period
