@@ -49,68 +49,10 @@ export default function Home() {
     }
   };
 
-  useEffect(() => {
-    const timer = setTimeout(() => {
-      speak(
-        "Welcome to World Trivia TV. Choose 2 countries, a time period, and how many questions you want to answer, then press Start."
-      );
-    }, 800);
-    return () => clearTimeout(timer);
-  }, []);
-
-  // Voice command listener
-  useEffect(() => {
-    if (!isVoiceActive) return;
-
-    const SpeechRecognition =
-      (window as any).SpeechRecognition ||
-      (window as any).webkitSpeechRecognition;
-
-    if (!SpeechRecognition) {
-      speak("Voice commands are not supported on this device");
-      setIsVoiceActive(false);
-      return;
-    }
-
-    const recognition = new SpeechRecognition();
-    recognition.continuous = true;
-    recognition.interimResults = false;
-    recognition.lang = "en-US";
-
-    recognition.onresult = (event: any) => {
-      const last = event.results.length - 1;
-      const command = event.results[last][0].transcript.toLowerCase();
-      setVoiceCommand(command);
-
-      console.log("Voice command received:", command);
-
-      // Process commands
-      if (command.includes("start") || command.includes("begin")) {
-        if (selectedCountries.length === 2 && selectedPeriod) {
-          handleStart();
-        } else {
-          speak("Please select 2 countries and a time period first");
-        }
-      }
-    };
-
-    recognition.onerror = (event: any) => {
-      console.log("Speech recognition error:", event.error);
-    };
-
-    recognition.start();
-
-    return () => {
-      recognition.stop();
-    };
-  }, [isVoiceActive, selectedCountries, selectedPeriod]);
-
   const handleCountrySelect = (country: string) => {
     if (selectedCountries.includes(country)) {
-      // Deselect if already selected
       setSelectedCountries(selectedCountries.filter((c) => c !== country));
     } else if (selectedCountries.length < 2) {
-      // Add if less than 2 selected
       setSelectedCountries([...selectedCountries, country]);
       speak(country);
     } else {
@@ -149,6 +91,119 @@ export default function Home() {
     );
   };
 
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      speak(
+        "Welcome to World Trivia TV. Choose 2 countries, a time period, and how many questions you want to answer, then press Start."
+      );
+    }, 800);
+    return () => clearTimeout(timer);
+  }, []);
+
+  useEffect(() => {
+    if (!isVoiceActive) return;
+
+    const SpeechRecognition =
+      (window as any).SpeechRecognition ||
+      (window as any).webkitSpeechRecognition;
+
+    if (!SpeechRecognition) {
+      speak("Voice commands are not supported on this device");
+      alert(
+        "Voice commands are not supported on this browser. Try Chrome or Edge."
+      );
+      setIsVoiceActive(false);
+      return;
+    }
+
+    const recognition = new SpeechRecognition();
+    recognition.continuous = true;
+    recognition.interimResults = true;
+    recognition.lang = "en-US";
+
+    recognition.onstart = () => {
+      console.log("✅ Voice recognition started");
+      speak("Voice commands active. Say start to begin.");
+    };
+
+    recognition.onresult = (event: any) => {
+      const current = event.resultIndex;
+      const transcript = event.results[current][0].transcript.toLowerCase();
+      const isFinal = event.results[current].isFinal;
+
+      console.log(`🎤 Heard: "${transcript}" (final: ${isFinal})`);
+
+      setVoiceCommand(transcript);
+
+      if (isFinal) {
+        console.log("✅ Final command:", transcript);
+
+        if (
+          transcript.includes("start") ||
+          transcript.includes("begin") ||
+          transcript.includes("go")
+        ) {
+          if (selectedCountries.length === 2 && selectedPeriod) {
+            speak("Starting trivia now");
+            setTimeout(() => handleStart(), 500);
+          } else {
+            speak("Please select 2 countries and a time period first");
+          }
+        } else if (
+          transcript.includes("stop") ||
+          transcript.includes("cancel")
+        ) {
+          speak("Voice commands off");
+          setIsVoiceActive(false);
+        }
+      }
+    };
+
+    recognition.onspeechstart = () => {
+      console.log("🗣️ Speech detected!");
+    };
+
+    recognition.onspeechend = () => {
+      console.log("🤐 Speech ended");
+    };
+
+    recognition.onerror = (event: any) => {
+      console.error("❌ Error:", event.error);
+      if (event.error === "not-allowed") {
+        alert(
+          "Microphone access denied. Please allow microphone access in your browser settings."
+        );
+        setIsVoiceActive(false);
+      } else if (event.error === "no-speech") {
+        console.log("⚠️ No speech detected");
+      }
+    };
+
+    recognition.onend = () => {
+      console.log("🔄 Recognition ended - restarting...");
+      if (isVoiceActive) {
+        try {
+          recognition.start();
+        } catch (e) {
+          console.log("Already restarting");
+        }
+      }
+    };
+
+    try {
+      recognition.start();
+      console.log("🚀 Starting voice recognition...");
+    } catch (error) {
+      console.error("Error starting recognition:", error);
+      speak("Could not start voice commands");
+      setIsVoiceActive(false);
+    }
+
+    return () => {
+      recognition.stop();
+    };
+  }, [isVoiceActive, selectedCountries, selectedPeriod]);
+
   const containerClass = `min-h-screen p-8 ${
     highContrast ? "bg-black" : "bg-blue-900"
   } text-white`;
@@ -169,7 +224,7 @@ export default function Home() {
         <title>World Trivia TV - Home</title>
         <meta
           name="description"
-          content="World Trivia TV - Choose your country and time period"
+          content="World Trivia TV - Choose your countries and time period"
         />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
@@ -225,7 +280,19 @@ export default function Home() {
             </button>
           </section>
 
-          {voiceCommand && (
+          {isVoiceActive && (
+            <div className="text-center mb-8 p-6 bg-green-600 rounded-lg">
+              <p className={`${textSize} font-bold mb-2`}>
+                🎤 Listening...{" "}
+                {voiceCommand
+                  ? `Heard: "${voiceCommand}"`
+                  : 'Say "Start" to begin'}
+              </p>
+              <p className="text-xl">Commands: "Start", "Begin", "Go"</p>
+            </div>
+          )}
+
+          {voiceCommand && !isVoiceActive && (
             <div className="text-center mb-8 p-4 bg-blue-700 rounded-lg">
               <p className={textSize}>Last command: "{voiceCommand}"</p>
             </div>
